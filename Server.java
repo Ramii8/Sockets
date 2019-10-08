@@ -12,7 +12,7 @@ public class Server
    public Server(int port)
    {
      try {
-          server=new ServerSocket(port);
+          Server=new ServerSocket(port);
           System.out.println("Server Started");
 
           System.out.println("Waiting for client to connect...");
@@ -40,7 +40,7 @@ public class Server
         }
         socket.close();
         in.close();
-
+}
         catch(IOException i)
         {
           System.out.println(i);
@@ -52,4 +52,4 @@ public class Server
     public static void main(String args[])
     {
         Server server = new Server(5000);
-    }
+}
